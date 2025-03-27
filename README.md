@@ -6,7 +6,7 @@ Small JavaScript library to help the conversion between CSV string and 2D array.
 
 Copy and import the following file:
 
-[./src/csv.js](./src/csv.js)
+[./src/mime.js](./src/mime.js)
 
 ## Usage
 
