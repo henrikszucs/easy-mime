@@ -1,0 +1,31 @@
+{
+    "name": "easy-mime",
+    "version": "0.0.1",
+    "description": "Small package to help search the MIME types and its extensions.",
+    "keywords": [
+        "javascript",
+        "mime",
+		"type",
+		"file",
+		"extension"
+    ],
+    "license": "GPL-2.0 license",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/henrikszucs/easy-mime"
+    },
+    "bugs": "https://github.com/henrikszucs/easy-mime/issues",
+    "maintainers": [
+        {
+            "name": "Henrik Szucs",
+            "email": "henrikszucs6@gmail.com"
+        }
+    ],
+    "scripts": {
+        "dev-server": "node dev/dev-server.js"
+    },
+    "type": "module",
+    "exports": {
+        ".": "./src/mime.js"
+    }
+}
