@@ -25,3 +25,7 @@ import MIME from "/src/mime.js";
 
 MIME.getExtTypes("image/jpeg"); // ["jpeg", "jpg", "jpe"]
 ```
+
+## License
+
+[LGPL-3.0-only](./LICENSE) — see also the referenced [GPL-3.0](./LICENSE.GPL-3.0).
