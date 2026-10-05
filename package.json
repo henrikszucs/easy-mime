@@ -1,13 +1,13 @@
 {
     "name": "easy-mime",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Small package to help search the MIME types and its extensions.",
     "keywords": [
         "javascript",
         "mime",
-		"type",
-		"file",
-		"extension"
+        "type",
+        "file",
+        "extension"
     ],
     "license": "LGPL-3.0-only",
     "repository": {
@@ -22,10 +22,28 @@
         }
     ],
     "scripts": {
-        "dev-server": "node dev/dev-server.js"
+        "build": "node dev/build.js",
+        "dev-server": "node dev/dev-server.js",
+        "prepublishOnly": "npm run build"
     },
     "type": "module",
+    "main": "./dist/mime.cjs",
+    "module": "./dist/mime.js",
     "exports": {
-        ".": "./src/mime.js"
+        ".": {
+            "import": "./dist/mime.js",
+            "require": "./dist/mime.cjs"
+        },
+        "./min": "./dist/mime.min.js",
+        "./iife": "./dist/mime.iife.min.js",
+        "./src": "./src/mime.js",
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "devDependencies": {
+        "esbuild": "^0.28.2"
     }
 }

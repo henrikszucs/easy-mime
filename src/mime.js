@@ -1147,7 +1147,7 @@ const DB = {
     "application/octet-stream": {
         "source": "iana",
         "compressible": false,
-        "extensions": ["bin", "dms", "lrf", "mar", "so", "dist", "distz", "pkg", "bpk", "dump", "elc", "deploy", "exe", "dll", "deb", "dmg", "iso", "img", "msi", "msp", "msm", "buffer"]
+        "extensions": ["bin", "dms", "lrf", "mar", "so", "dist", "distz", "pkg", "bpk", "dump", "elc", "deploy", "exe", "dll", "deb", "dmg", "iso", "img", "msi", "msp", "msm", "buffer", "onnx"]
     },
     "application/oda": {
         "source": "iana",
@@ -8827,8 +8827,5 @@ const getExtTypes = function (str) {
     return DB[str]["extensions"];
 };
 
-export default {
-    getMIMETypes,
-    getMIMEType,
-    getExtTypes
-};
+export { getMIMETypes, getMIMEType, getExtTypes };
+export default { getMIMETypes, getMIMEType, getExtTypes };
